@@ -1,0 +1,14 @@
+2022-08-08 21:24:42,431 [main] INFO  sic.Initializer - Service -EmotionRecognition- is initializing ....
+2022-08-08 21:24:42,982 [main] INFO  sic.Service - Redis topic -EmotionRecognitionRcv- is created for receiving data.
+2022-08-08 21:24:42,996 [main] INFO  sic.Service - Web URI -jetty://http://10.98.98.61:80/EmotionRecognitionSnd- is created for sending results.
+2022-08-08 21:24:42,997 [main] INFO  sic.Initializer - EmotionRecognition service is registered.
+2022-08-08 21:25:08,342 [qtp1798299644-87] INFO  sic.DeviceProcessor - Device connection request from BilginPhone1
+2022-08-08 21:25:09,361 [qtp1798299644-87] INFO  sic.Device - Data sending routes are preparing ...
+2022-08-08 21:25:10,455 [qtp1798299644-87] INFO  sic.Device - Route -BilginPhone1Camera1Snd- from Web URI -jetty://http://10.98.98.61:80/BilginPhone1Camera1Snd- to requested services of -BilginPhone1Camera1- is preparing.
+2022-08-08 21:25:11,013 [qtp1798299644-87] INFO  sic.Device - Route -BilginPhone1Camera1Snd- is created from Web URI -jetty://http://10.98.98.61:80/BilginPhone1Camera1Snd- to Redis topic -EmotionRecognitionRcv
+2022-08-08 21:25:11,026 [qtp1798299644-87] INFO  sic.Device - Result receiving routes are preparing ...
+2022-08-08 21:25:11,053 [qtp1798299644-87] INFO  sic.Device - Processing -BilginPhone1Camera1EmotionRecognition
+2022-08-08 21:25:11,775 [qtp1798299644-87] INFO  sic.Device - Service request -direct:BilginPhone1Camera1EmotionRecognition- is added to choice.
+2022-08-08 21:25:11,945 [qtp1798299644-87] INFO  sic.Device - Route -EmotionRecognition- is created from Web URI -jetty://http://10.98.98.61:80/EmotionRecognitionSnd- to service requests.
+2022-08-08 21:25:12,868 [qtp1798299644-87] INFO  sic.Device - Route -BilginPhone1Camera1EmotionRecognition- is created from -direct:BilginPhone1Camera1EmotionRecognition- to Web URI -http://10.98.98.61:5000/Result?bridgeEndpoint=true
+2022-08-08 21:25:13,135 [qtp1798299644-87] INFO  sic.Device - Connection information is prepared as JSON 
